@@ -1,0 +1,49 @@
+查看本地分支标签
+
+git tag
+git tag -l
+git tag --list
+
+查看远程所有标签
+
+git ls-remote --tags
+git ls -remote --tag
+
+给当前分支打标签
+git tag 标签名
+
+给特定某个commit版本打标签
+
+git tag v1.0.0 039bf8b
+git tag v1.0.0 -m "add tags information" 039bf8b
+git tag v1.0.0 039bf8b -m "add tags information"
+
+删除本地某个标签
+
+git tag --delete v1.0.0
+git tag -d v1.0.0
+git tag --d v1.0.0
+
+删除远程的某个标签
+
+git push -d origin v1.0.0
+git push --delete origin v1.0.0
+git push origin -d v1.0.0
+git push origin --delete v1.0.0
+git push origin :v1.0.0
+
+将本地标签一次性推送远程
+
+git push origin --tags
+git push origin --tag
+git push --tags
+git push --tag
+
+将本地某个特定标签推送到远程
+git push origin v1.0.0
+
+查看某一个标签的提交信息
+git show v1.0.0
+
+根据某个commit创建本地分支
+git checkout 12345678 -b newBranch
