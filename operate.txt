@@ -1,0 +1,5 @@
+git rebase操作流程
+
+1.先在当前分支运行 git rebase master进行变基
+2.解决冲突
+3.切换到master分支，运行git merge 需要合并的分支
