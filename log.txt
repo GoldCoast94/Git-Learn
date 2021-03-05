@@ -13,3 +13,7 @@ HEAD^的意思是上一个版本，也可以写成HEAD~1
 如果你进行了2次commit，想都撤回，可以使用HEAD~2
 
 git status 查看当前文件的状态
+
+git push origin master --force强制提交当前版本号
+
+git revert是用一次新的commit来 回滚之前的commit，git reset是直接 删除指定的commit
