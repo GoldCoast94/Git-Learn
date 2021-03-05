@@ -3,3 +3,13 @@
 　　显示从近到远的日志记录，按向下键来查看更多，按 Q 键退出查看日志
 2、git log --pretty=oneline
 　　简洁显示日志记录
+
+git reset --hard 提交id     注意:工作空间的代码的改动就没啦
+
+如果想保留工作空间的代码只是撤销commit,请执行下面的命令:
+git reset --soft HEAD^
+
+HEAD^的意思是上一个版本，也可以写成HEAD~1
+如果你进行了2次commit，想都撤回，可以使用HEAD~2
+
+git status 查看当前文件的状态
